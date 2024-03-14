@@ -13,12 +13,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.ssi" />
 	
-	<!-- View Resolver Configuration -->
 	
-	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	<property name="prefix" value="WEB-INF/pages/"/>
-	<property name="suffix" value=".jsp"/>
-	</bean>
 	
 	
 	<!--  Spring Framework Beans -->

@@ -21,7 +21,8 @@ public class ProductController {
 			//talk to service to get product details
 			Product product=productService.productDetails(code);
 			
-			ModelAndView modelAndView=new ModelAndView("details.jsp");
+//			ModelAndView modelAndView=new ModelAndView("WEB-INF/pages/details.jsp");
+			ModelAndView modelAndView=new ModelAndView("details");
 			modelAndView.addObject("product",product);
 			return modelAndView;
 		}
@@ -31,7 +32,8 @@ public class ProductController {
 	@RequestMapping("/searchinput")
 	public String showSearchForm()
 	{
-		return "searchpage.jsp";
+		//return "WEB-INF/pages/searchpage.jsp";
+		return "searchpage";
 	}
 	
 	
